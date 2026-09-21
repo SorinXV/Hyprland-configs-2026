@@ -1,0 +1,23 @@
+configuration {
+    modi: "drun";
+
+    show-icons: true;
+    icon-theme: "Papirus";
+
+    display-drun: "Search";
+
+    drun-display-format: "{name}";
+
+    drun-show-actions: false;
+
+    drun-match-fields: "name,generic,exec,categories,keywords";
+
+    case-sensitive: false;
+
+    sidebar-mode: false;
+    
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "";
+
+}

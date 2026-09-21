@@ -1,0 +1,83 @@
+* {
+    font:                        "Fira Code 12";
+
+    bg-main:                     #0d1117;
+    bg-alt:                      #161b22;
+    bg-selected:                 #1f6feb;
+    border-col:                  #30363d;
+    
+    fg-main:                     #c9d1d9;
+    fg-muted:                    #8b949e;
+    fg-selected:                 #ffffff;
+    accent:                      #58a6ff;
+
+    background-color:            transparent;
+    text-color:                  @fg-main;
+    margin:                      0;
+    padding:                     0;
+    spacing:                     0;
+}
+
+window {
+    width:                       600px;
+    background-color:            @bg-main;
+    border:                      1px;
+    border-color:                @border-col;
+    border-radius:               8px;
+    padding:                     15px;
+}
+
+mainbox {
+    spacing:                     12px;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    background-color:            @bg-alt;
+    border:                      1px;
+    border-color:                @border-col;
+    border-radius:               6px;
+    padding:                     8px 12px;
+    spacing:                     8px;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color:                  @accent;
+}
+
+entry {
+    text-color:                  @fg-main;
+    placeholder:                 "Search...";
+    placeholder-color:           @fg-muted;
+}
+
+listview {
+    lines:                       8;
+    columns:                     1;
+    fixed-height:                false;
+    spacing:                     4px;
+}
+
+element {
+    padding:                     8px 12px;
+    border-radius:               6px;
+    text-color:                  @fg-main;
+}
+
+element selected.normal {
+    background-color:            @bg-selected;
+    text-color:                  @fg-selected;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+}
+
+element-icon {
+    size:                        20px;
+    padding:                     0 8px 0 0;
+    background-color:            transparent;
+}
